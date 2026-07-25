@@ -50,7 +50,7 @@ const Dealers = () => {
 let isLoggedIn = sessionStorage.getItem("username") != null ? true : false;
 return(
   <div>
-      <Header/>
+     
     <div className="container mt-4">
       
       <div className='d-flex justify-content-between mb-3'>

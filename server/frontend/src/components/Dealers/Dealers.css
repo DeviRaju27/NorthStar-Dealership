@@ -19,14 +19,14 @@ table{
     border: solid grey;
     position: relative;
     height:7cm;
-    width:6cm;
+    width:25%;
     overflow-y: scroll;
     padding:.3cm;
     padding-top: 0%;
     border-radius:10px; 
     box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.5);
     margin-bottom: .5cm;
-    justify-content: space-between;
+  
   }
 
   .postreview{
@@ -54,12 +54,20 @@ table{
     margin-top: 1cm;
     align-items: flex-start;
   }
-
-  .reviewer {
+.reviewer{
+  text-align: end;
+}
+  .reviewer-name {
     margin: 10px; /* Optional margin for spacing */
-    font-style: italic;
-    color: gray;
-    font-size: small;
+    font-weight: 700;
+    color: rgb(31, 29, 29);
+    font-size: medium;
+}
+.reviewer-info {
+    margin: 10px; /* Optional margin for spacing */
+    
+    color: rgb(70, 69, 69);
+    font-size: medium;
 }
 
 .review {

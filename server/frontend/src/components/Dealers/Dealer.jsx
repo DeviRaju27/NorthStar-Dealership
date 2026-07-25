@@ -68,24 +68,38 @@ const Dealer = () => {
 
 
 return(
-  <div>
-      <Header/>
-      <div>
+  <div className='dealer-info'>
+      
+      <div >
       <h1 style={{color:"grey"}}>{dealer.full_name}{postReview}</h1>
       <h4  style={{color:"grey"}}>{dealer['city']},{dealer['address']}, Zip - {dealer['zip']}, {dealer['state']} </h4>
       </div>
       <div class="reviews_panel">
       {reviews.length === 0 && unreviewed === false ? (
         <text>Loading Reviews....</text>
-      ):  unreviewed === true? <div>No reviews yet! Please login to add your review </div> :
+      ):  unreviewed === true? <div>No reviews yet! </div> :
       reviews.map(review => (
+        
         <div className='review_panel'>
-          <img src={senti_icon(review.sentiment)} className="emotion_icon" alt='Sentiment'/>
+          {/* <img src={senti_icon(review.sentiment)} className="emotion_icon" alt='Sentiment'/> */}
+         
+        
           <div className='review'>{review.review}</div>
-          <div className="reviewer">{review.name} {review.car_make} {review.car_model} {review.car_year}</div>
+          <div className='reviewer'>
+          <div className="reviewer-name">- {review.name} 
+            </div> 
+              <div className="reviewer-info">
+            {review.car_make} {review.car_model} {review.car_year}</div> 
+          
         </div>
+        </div>
+        
+       
       ))}
+   
     </div>  
+       <div>Please login to add your review.</div>
+    
   </div>
 )
 }

@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 const About = () => {
     return (
         <>
-        <Header/>
+       
         <div className="card" style={{width: '80%', margin: 'auto', marginTop:'5%'}}>
       <div className="banner" name="about-header">
         <h1>About Us</h1>

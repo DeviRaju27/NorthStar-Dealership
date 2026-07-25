@@ -93,7 +93,7 @@ const PostReview = () => {
 
   return (
     <div>
-      <Header/>
+     
       <div  style={{margin:"5%"}}>
       <h1 style={{color:"darkblue"}}>{dealer.full_name}</h1>
       <textarea id='review' cols='50' rows='7' onChange={(e) => setReview(e.target.value)}></textarea>

@@ -109,7 +109,7 @@ const Header = () => {
               <div className="loginlink" id="loginlogout">
                     { username ? (
                       <>
-                      <span>{username}</span>
+                      <span className='mx-3'>{username}</span>
                       <a href='/' onClick={logout}>Log out</a>
                       </>
                     ) : (

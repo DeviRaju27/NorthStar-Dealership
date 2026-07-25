@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 const Contact = () => {
     return (
         <>
-        <Header/>
+        
         <div className="card contact_main_card">
             <div className="banner" name="about-header">
                 <h1>Contact Us</h1>
