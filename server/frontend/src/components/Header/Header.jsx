@@ -54,7 +54,7 @@ const Header = () => {
                 <button type='button' className='btn dropdown-toggle' id='emailDropDown' data-bs-toggle='dropdown' aria-expanded='false'>
                   <i className='bi bi-envelope-fill'></i>
                 </button>
-                <ul className='dropdown-menu' aria-labelledby='emailDropDown'>
+                <ul className='dropdown-menu dropdown-menu-end' aria-labelledby='emailDropDown'>
                   <li>
                     <a className='dropdown-item' href="">Sales: sales@northstar.com</a>
                   </li>
@@ -70,7 +70,7 @@ const Header = () => {
                 <button type='button' className='btn dropdown-toggle' id='phoneDropDown' data-bs-toggle='dropdown' aria-expanded='false'>
                   <i className='bi bi-telephone-fill'></i>
                 </button>
-                <ul className='dropdown-menu' aria-labelledby='phoneDropDown'>
+                <ul className='dropdown-menu dropdown-menu-end' aria-labelledby='phoneDropDown'>
                   <li>
                     <a className='dropdown-item' href="">Sales: +1 234- 567- 4567</a>
                   </li>

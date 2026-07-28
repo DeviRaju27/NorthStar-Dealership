@@ -6,7 +6,7 @@ import positive_icon from "../assets/positive.png"
 import neutral_icon from "../assets/neutral.png"
 import negative_icon from "../assets/negative.png"
 import review_icon from "../assets/reviewbutton.png"
-import Header from '../Header/Header';
+
 
 const Dealer = () => {
 
@@ -15,6 +15,8 @@ const Dealer = () => {
   const [reviews, setReviews] = useState([]);
   const [unreviewed, setUnreviewed] = useState(false);
   const [postReview, setPostReview] = useState(<></>)
+  const [username, setUsername] = useState("");
+       
 
   let curr_url = window.location.href;
   let root_url = curr_url.substring(0,curr_url.indexOf("dealer"));
@@ -57,6 +59,8 @@ const Dealer = () => {
   }
 
   useEffect(() => {
+    const currUser = sessionStorage.getItem('username');
+    setUsername( currUser || '')
     get_dealer();
     get_reviews();
     if(sessionStorage.getItem("username")) {
@@ -90,7 +94,7 @@ return(
             </div> 
               <div className="reviewer-info">
             {review.car_make} {review.car_model} {review.car_year}</div> 
-          
+         
         </div>
         </div>
         
@@ -98,7 +102,7 @@ return(
       ))}
    
     </div>  
-       <div>Please login to add your review.</div>
+      {username ? <span> Please post your review</span> : <span>Please login to post your review</span>}
     
   </div>
 )

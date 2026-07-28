@@ -9,9 +9,12 @@ table{
     padding:10px;
     align-self: center;
     border:solid grey .5px;
-    text-align: center;
+    
     font-size: large;
   }
+.dealer-info {
+  margin: 2rem;
+}
   
   .review_panel{
     display: flex;
@@ -93,4 +96,9 @@ table{
 .review_icon:hover {
   transform: scale(1.1);
   border: solid lightgray;
+}
+@media (max-width:991px) {
+    .review_panel {
+      width: 75%;
+    }
 }

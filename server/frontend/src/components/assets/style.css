@@ -213,3 +213,16 @@ img{
   background-color: #fff;
   color: #000;
 }
+@media (max-width:991px){
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: auto;
+    width: auto;
+    background: rgb(50, 101, 186);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px;
+    z-index: 1;
+  }
+}

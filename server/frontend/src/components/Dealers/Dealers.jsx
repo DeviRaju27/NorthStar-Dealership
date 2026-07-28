@@ -74,13 +74,13 @@ return(
             <th>ID</th>
             <th>Dealer Name</th>
             <th>City</th>
-            <th>Address</th>
-            <th>Zip</th>
+            {/* <th>Address</th> */}
+            {/* <th>Zip</th> */}
             <th>State</th>
-            <th>
+           
                 
 
-            </th>
+           
             {isLoggedIn ? (
                 <th>Review Dealer</th>
               ):<></>
@@ -93,8 +93,8 @@ return(
                 <td>{dealer['id']}</td>
                 <td><a href={'/dealer/'+dealer['id']}>{dealer['full_name']}</a></td>
                 <td>{dealer['city']}</td>
-                <td>{dealer['address']}</td>
-                <td>{dealer['zip']}</td>
+                {/* <td>{dealer['address']}</td> */}
+                {/* <td>{dealer['zip']}</td> */}
                 <td>{dealer['state']}</td>
                 {isLoggedIn ? (
                   <td><a href={`/postreview/${dealer['id']}`}><img src={review_icon} className="review_icon" alt="Post Review"/></a></td>
